@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/rsilveira65/tw-challenge.svg?token=z2yf7ZpVZudwz9Cxdor9&branch=master)](https://travis-ci.com/rsilveira65/tw-challenge) [![CircleCI](https://circleci.com/gh/rsilveira65/tw-challenge/tree/master.svg?style=svg)](https://circleci.com/gh/rsilveira65/tw-challenge/tree/master)
+[![Build Status](https://travis-ci.com/rsilveira65/tw-challenge.svg?token=z2yf7ZpVZudwz9Cxdor9&branch=master)](https://travis-ci.com/rsilveira65/tw-challenge) [![CircleCI](https://circleci.com/gh/rsilveira65/tw-challenge/tree/master.svg?style=svg)](https://circleci.com/gh/rsilveira65/tw-challenge/tree/master)[![Coverage Status](https://coveralls.io/repos/github/rsilveira65/tw-challenge/badge.svg?branch=master&t=tnhJ2X)](https://coveralls.io/github/rsilveira65/tw-challenge?branch=master)
 
 # Exercício: Reserva de Hotel
 
