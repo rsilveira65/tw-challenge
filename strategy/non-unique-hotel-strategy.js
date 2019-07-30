@@ -2,15 +2,8 @@ class NonUniqueHostelStrategy {
     process(ridgeWoodhotel, bridgeWoodhotel, lakeWoodhotel) {
         const hotelRatesArray = [ridgeWoodhotel.calculeteRate(), bridgeWoodhotel.calculeteRate(), lakeWoodhotel.calculeteRate()];
 
-        const nonUniqueRate = hotelRatesArray.filter(
-            hotelRate => {
-                let x = hotelRatesArray.indexOf(hotelRate) 
-                let y = hotelRatesArray.lastIndexOf(hotelRate)
-                let z = (x !== y)
-                
-                return z
-            }
-        );
+        //lastIndexOf - find the last ocurrence of the value in the array, if is different from the currently, there are duplicated items.
+        const nonUniqueRate = hotelRatesArray.filter(hotelRate => hotelRatesArray.indexOf(hotelRate) !== hotelRatesArray.lastIndexOf(hotelRate));
 
         if (nonUniqueRate.length == 0) return false;
 
