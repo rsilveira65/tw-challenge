@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rsilveira65/tw-challenge.svg?token=z2yf7ZpVZudwz9Cxdor9&branch=master)](https://travis-ci.com/rsilveira65/tw-challenge)
+
 # Exercício: Reserva de Hotel
 
 Uma rede de hotéis em Miami gostaria de oferecer um serviço de reservas pela internet. A rede é composta por três hotéis: Lakewood, Bridgewood e Ridgewood. Cada hotel tem taxas diferenciadas para dia de semana ou final de semana, incluindo taxas específicas para participantes do programa de fidelidade. Adicionalmente, cada hotel tem uma classificação, indicando a excelência do serviço.
