@@ -2,7 +2,15 @@ class NonUniqueHostelStrategy {
     process(ridgeWoodhotel, bridgeWoodhotel, lakeWoodhotel) {
         const hotelRatesArray = [ridgeWoodhotel.calculeteRate(), bridgeWoodhotel.calculeteRate(), lakeWoodhotel.calculeteRate()];
 
-        const nonUniqueRate = hotelRatesArray.filter(hotelRate => hotelRatesArray.indexOf(hotelRate) !== hotelRatesArray.lastIndexOf(hotelRate));
+        const nonUniqueRate = hotelRatesArray.filter(
+            hotelRate => {
+                let x = hotelRatesArray.indexOf(hotelRate) 
+                let y = hotelRatesArray.lastIndexOf(hotelRate)
+                let z = (x !== y)
+                
+                return z
+            }
+        );
 
         if (nonUniqueRate.length == 0) return false;
 
