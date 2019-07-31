@@ -8,7 +8,7 @@ class NonUniqueHostelStrategy {
 
 		//lastIndexOf - find the last ocurrence of the value in the array, if is different from the currently, there are duplicated items.
 		const nonUniqueRate = hotelRatesArray.filter(
-			(hotelRate) => hotelRatesArray.indexOf(hotelRate) !== hotelRatesArray.lastIndexOf(hotelRate)
+			hotelRate => hotelRatesArray.indexOf(hotelRate) !== hotelRatesArray.lastIndexOf(hotelRate)
 		);
 
 		if (nonUniqueRate.length == 0) return false;

@@ -6,7 +6,7 @@ const UniqueHostelStrategy = require('./strategy/unique-hotel-strategy');
 
 const fs = require('fs');
 
-const PARENTHESES_REGEX = /\(([^)]+)\)/; //https://stackoverflow.com/questions/17779744/regular-expression-to-get-a-string-between-parentheses-in-javascript/17779833
+const PARENTHESES_REGEX = /\((.*?)\)/; 
 
 const INPUT = 'input1.txt';
 //const INPUT = 'input2.txt';
@@ -15,6 +15,7 @@ const INPUT = 'input1.txt';
 const input = fs.readFileSync(`inputs/${INPUT}`, 'utf8');
 
 const days = input.split(',').map((element) => PARENTHESES_REGEX.exec(element)[1]);
+
 const clientType = input.split(':')[0];
 
 const ridgewoodHotel = new Ridgewood(days, clientType);

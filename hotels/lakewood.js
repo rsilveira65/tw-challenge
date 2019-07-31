@@ -5,16 +5,16 @@ class Lakewood extends Hotel {
 		super(days, clientType);
 
 		this.stars = 3;
-		this.WeekDay = [ 110, 80 ];
-		this.WeekendDay = [ 90, 80 ];
+		this.weekDay = [ 110, 80 ];
+		this.weekendDay = [ 90, 80 ];
 	}
 
 	calculeteRate() {
 		return this.days.reduce(
 			(price, day) =>
 				this.weekdays.includes(day)
-					? price + this.WeekDay[this.clientType]
-					: price + this.WeekendDay[this.clientType],
+					? price + this.weekDay[this.clientType]
+					: price + this.weekendDay[this.clientType],
 			0
 		);
 	}

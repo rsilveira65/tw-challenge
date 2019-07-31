@@ -5,12 +5,18 @@ class Ridgewood extends Hotel {
         super(days, clientType);
 
         this.stars = 5; 
-        this.WeekDay = [220, 100];
-        this.WeekendDay = [150, 40];
+        this.weekDay = [ 220, 100 ];
+        this.weekendDay = [ 150, 40] ;
     }
 
     calculeteRate() {
-        return this.days.reduce((price, day) => (this.weekdays.includes(day)) ? price + this.WeekDay[this.clientType] : price + this.WeekendDay[this.clientType], 0);
+        return this.days.reduce(
+            (price, day) => 
+                this.weekdays.includes(day) 
+                    ? price + this.weekDay[this.clientType] 
+                    : price + this.weekendDay[this.clientType], 
+            0
+        );
     }
 
     getStars() {
